@@ -1,4 +1,6 @@
 import { cloneDeep } from "lodash";
+import { combineReducers } from "redux";
+import favoriteReducer from "./favoriteReducer";
 
 const INITIAL_STATE = {
   categories: [],
@@ -41,10 +43,6 @@ const saveJoke = (state, { joke }) => {
   return newState;
 };
 
-const randomJoke = (stat, { joke }) => {
-  let heresRandomJoke = state.value;
-};
-
 export const data = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "SAVE_CATEGORIES":
@@ -55,3 +53,7 @@ export const data = (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default combineReducers({
+  Jokes: favoriteReducer
+});
