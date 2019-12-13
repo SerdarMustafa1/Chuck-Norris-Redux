@@ -1,0 +1,52 @@
+{
+    "name": "chucknorris-jokes",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/renamsavio/chucknorris-react-client.git",
+    "author": "Serdar Mustafa <serdarmustafa1@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@material-ui/core": "^4.7.2",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-react-hmre": "^1.1.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "css-loader": "^0.28.9",
+        "file-loader": "^1.1.6",
+        "gh-pages": "^1.1.0",
+        "image-webpack-loader": "^3.4.2",
+        "inline-svg-react": "^0.1.8",
+        "lodash": "^4.17.4",
+        "material-ui": "^0.20.0",
+        "node-sass": "^4.7.2",
+        "raw-loader": "^0.5.1",
+        "react": "^16.2.0",
+        "react-collapsible": "^2.0.4",
+        "react-dom": "^16.2.0",
+        "react-flexbox-grid": "^2.0.0",
+        "react-inlinesvg": "^0.7.4",
+        "react-redux": "^5.0.6",
+        "react-router-dom": "^5.1.2",
+        "react-svg-inline": "^2.1.0",
+        "redux": "^3.7.2",
+        "redux-thunk": "^2.2.0",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.19.1",
+        "svg-inline-loader": "^0.8.0",
+        "svg-inline-react": "^3.0.0",
+        "svg-react-loader": "^0.4.5",
+        "url-loader": "^0.6.2",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.11.1"
+    },
+    "scripts": {
+        "dist": "webpack",
+        "start": "webpack-dev-server --progress --inline --hot"
+    },
+    "devDependencies": {
+        "eslint": "^6.7.2",
+        "eslint-plugin-react": "^7.17.0"
+    }
+}
