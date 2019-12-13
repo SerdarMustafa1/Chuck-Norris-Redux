@@ -5,10 +5,12 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/"
   },
   devServer: {
     contentBase: "./dist",
+    historyApiFallback: true,
     hot: true
   },
   plugins: [
@@ -41,6 +43,9 @@ const config = {
         use: [
           {
             loader: "style-loader" // creates style nodes from JS strings kk
+          },
+          {
+            loader: "file-loader"
           },
           {
             loader: "css-loader" // translates CSS into CommonJS

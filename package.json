@@ -14,7 +14,6 @@
         "babel-preset-react-hmre": "^1.1.1",
         "babel-preset-stage-0": "^6.24.1",
         "css-loader": "^0.28.9",
-        "file-loader": "^1.1.6",
         "gh-pages": "^1.1.0",
         "image-webpack-loader": "^3.4.2",
         "inline-svg-react": "^0.1.8",
@@ -47,6 +46,7 @@
     },
     "devDependencies": {
         "eslint": "^6.7.2",
-        "eslint-plugin-react": "^7.17.0"
+        "eslint-plugin-react": "^7.17.0",
+        "file-loader": "^1.1.11"
     }
 }

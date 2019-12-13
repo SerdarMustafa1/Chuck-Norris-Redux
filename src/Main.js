@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import TitleBar from "./components/TitleBar/TitleBar";
 import RandomJokeContainer from "./containers/RandomJokeContainer";
 import AccordionContainer from "./containers/AccordionContainer";
+import Favorite from "./components/Favorite/Favorite";
 import Logo from "./images/chuck_norris.jpg";
 
 import "./Main.scss";
 
 const URL = {
   CATEGORIES: "https://api.chucknorris.io/jokes/categories",
-  JOKE: "https://api.chucknorris.io/jokes/random?category=",
-  RANDOM: "https://api.chucknorris.io/jokes/random"
+  JOKE: "https://api.chucknorris.io/jokes/random?category="
 };
 
 class Main extends Component {
@@ -32,10 +32,9 @@ class Main extends Component {
               randomUrl={URL.RANDOM}
               style={{ width: "300px" }}
             />
-            <h2>Search</h2>
-            <input type="text" />
           </div>
-          <h1 style={{ margin: "0px" }}>Categories</h1>
+          {/* <Favorite /> */}
+          <h1 style={{ marginTop: "20px" }}>Categories</h1>
         </div>
         <AccordionContainer categoriesUrl={URL.CATEGORIES} jokeUrl={URL.JOKE} />
       </div>

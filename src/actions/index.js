@@ -5,20 +5,6 @@ export const fetchCategories = url => {
   };
 };
 
-export const fetchRandom = joke => {
-  return {
-    type: "FETCH_RANDOM",
-    joke: joke
-  };
-};
-
-export const fetchFromSearch = url => {
-  return {
-    type: "FETCH_FROM_SEARCH",
-    url: url
-  };
-};
-
 export const saveCategories = categories => {
   return {
     type: "SAVE_CATEGORIES",
@@ -32,3 +18,8 @@ export const saveJoke = joke => {
     joke: joke
   };
 };
+
+export const saveJokeAction = joke => ({
+  type: "SAVE",
+  payload: joke
+});

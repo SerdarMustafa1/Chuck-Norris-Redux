@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-// import ProfilePic from "../../images/Headshot.jpg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Typography from "@material-ui/core/Typography";
+import ProfilePic from "../../images/headshot.jpg";
 import "./About.css";
-
-const ProfilePic = require("../../images/Headshot.jpg");
 
 class About extends Component {
   constructor(props) {
@@ -11,8 +11,9 @@ class About extends Component {
       person: {
         name: "Serdar Mustafa",
         biography:
-          "34 year old Developer / Athlete living in Tallinn. Originally from London, England. Love to make stuff."
+          "34 year old Husband/Father/Developer/Athlete living in Tallinn. Originally from London, England. Love to make stuff."
       },
+      image: "https://imgur.com/a/JpgsZHs",
       quote: {
         content: "Be like water...",
         source: "Bruce Lee"
@@ -30,11 +31,21 @@ class About extends Component {
 }
 
 function Image(props) {
-  return <div className="Image" style={{ backgroundImage: ProfilePic }}></div>;
+  return (
+    <div
+      className="Image"
+      style={{ backgroundImage: `url(${ProfilePic})` }}
+    ></div>
+  );
 }
 function Profile(props) {
   return (
     <div className="Profile">
+      <div>
+        <Link to="/">
+          <Typography className="Jokes">Jokes</Typography>
+        </Link>
+      </div>
       <h1 className="Name">{props.person.name}</h1>
       <p className="Bio">{props.person.biography}</p>
       <div className="Quote">
